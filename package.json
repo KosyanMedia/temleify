@@ -1,0 +1,28 @@
+{
+  "name": "temple-watify",
+  "version": "0.0.1",
+  "description": "Browserify temple-wat transform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KosyanMedia/templeify.git"
+  },
+  "keywords": [
+    "temple-wat",
+    "template",
+    "transform",
+    "browserify"
+  ],
+  "author": "Pavel Gorlov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KosyanMedia/templeify/issues"
+  },
+  "homepage": "https://github.com/KosyanMedia/templeify#readme",
+  "dependencies": {
+    "temple": "0.0.3"
+  }
+}
