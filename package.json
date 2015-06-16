@@ -1,6 +1,6 @@
 {
   "name": "temple-watify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Browserify temple-wat transform",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/KosyanMedia/templeify#readme",
   "dependencies": {
-    "temple": "0.0.3"
+    "temple": "0.0.3",
+    "through": "^2.3.7"
   }
 }
