@@ -1,6 +1,6 @@
 {
   "name": "temple-watify",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Browserify temple-wat transform",
   "main": "index.js",
   "scripts": {

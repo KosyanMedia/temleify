@@ -1,17 +1,17 @@
 var through = require('through');
-var temple = require('temple');
+var temple = require('temple-wat');
 
 module.exports = function(file) {
-  var data = '';
+  if(!/\.temple$/.test(file)) return through();
+  var data = '', stream = through(write, end);
+  return stream;
 
-  return through((function(buf) {
-    if(/\.temple$/.test(file)){
-      data += temple([file], true, true);
-    }else{
-      data += buf;
-    }
-  }), (function(cb) {
-    this.push(data);
-    return cb();
-  }));
+  function write(buf, enc, next) {
+    data += temple(file, true, true);
+  }
+
+  function end() {
+    stream.queue(data);
+    stream.queue(null);
+  }
 };
